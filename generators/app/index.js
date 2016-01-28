@@ -8,7 +8,7 @@ module.exports = yeoman.generators.Base.extend({
 
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Welcome to the geometric ' + chalk.red('MGreystone Webpack') + ' generator!'
+      'Welcome to the geometric ' + chalk.red('MGreystone Webpack React') + ' generator!'
     ))
 
     var prompts = [
@@ -37,7 +37,8 @@ module.exports = yeoman.generators.Base.extend({
     app: function () {
       this.copy('gulpfile.js', 'gulpfile.js')
       this.template('webpack.config.js', 'webpack.config.js')
-      this.copy('src/index.js', 'src/index.js')
+      this.copy('src/index.jsx', 'src/index.jsx')
+      this.copy('src/components/app.jsx', 'src/components/app.jsx')
     }
   },
 

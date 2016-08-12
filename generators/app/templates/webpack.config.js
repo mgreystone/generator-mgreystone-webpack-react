@@ -20,7 +20,7 @@ module.exports = {
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'babel?optional=runtime'
+        loader: 'babel'
       }
     ]
   },
@@ -34,7 +34,7 @@ module.exports = {
     new webpack.optimize.UglifyJsPlugin(),
 
     new HtmlWebpackPlugin({
-      title: '<%= appname %>'
+      title: 'test-react'
     })
   ]
 }

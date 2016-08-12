@@ -30,6 +30,7 @@ module.exports = yeoman.generators.Base.extend({
 
     projectfiles: function () {
       this.template('_package.json', 'package.json')
+      this.copy('babelrc', '.babelrc')
       this.copy('eslintrc', '.eslintrc')
       this.copy('gitignore', '.gitignore')
     },

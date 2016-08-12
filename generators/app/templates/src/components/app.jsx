@@ -1,14 +1,6 @@
-import React from 'react'
-
-const App = React.createClass({
-
-  displayName: 'App',
-
-  render () {
-    console.log('up & running!')
-    return null
-  }
-
-})
+const App = () => {
+  console.log('up and running!')
+  return null
+}
 
 export default App
